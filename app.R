@@ -48,7 +48,7 @@ server <- function(input, output, session) {
   raw_data <- reactive({
     # Option 1: example data for Cox
     if (isTRUE(input$use_example)) {
-      df <- survival::lung
+      
       # clean it a bit
       df <- df %>%
         mutate(
@@ -56,7 +56,7 @@ server <- function(input, output, session) {
         )
       return(df)
     }
-    
+    # browser()
     # Option 2: user-uploaded CSV
     req(input$data_file)
     ext <- tools::file_ext(input$data_file$name)
