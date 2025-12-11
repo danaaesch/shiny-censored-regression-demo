@@ -1,2 +1,2 @@
-# shiny-censored-regression-demo. Just some stuff
+# shiny-censored-regression-demo.
 Upload a file and make a regression model
